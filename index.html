@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIEDRA, PAPEL O TIJERA</title>
+</head>
+<body>
+    <script>
+alert ("iniciando el juego")
+alert("elige tu ataque")
+
+let jugador = prompt("escribe 0 para pidra, 1 para papel o 2 para tijera")
+
+if (jugador  == 0) {
+    alert("haz elegido piedra ")
+} else if(jugador == 1){
+    alert("haz elegido papel ")
+}else if(jugador == 2){
+    alert("haz elegido tijera")
+}
+
+let enemigo = Math.round(Math.random()* 2)
+
+
+if (enemigo  == 0) {
+    alert("el enemigo eligio piedra ")
+} else if(enemigo == 1){
+    alert("el enemigo eligio papel ")
+}else if(enemigo == 2){
+    alert("el enemigo eligio tijera")
+}
+
+if (jugador == enemigo){
+    alert("haz empatado ni modo :[")
+}else if (jugador == 0 && enemigo == 2){
+    alert("has ganado :)")
+}else if (jugador == 1 && enemigo == 0){
+    alert("haz ganado :]")
+}else if(jugador == 2 && enemigo == 1){
+    alert("haz ganado :)")
+}else{
+    alert("perdiste menso")
+}
+
+alert("Este juego fue Hecho por el guapo y sexy ivan")
+    </script>
+</body>
+</html>
